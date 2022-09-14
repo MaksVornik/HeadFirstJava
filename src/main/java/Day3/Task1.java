@@ -9,24 +9,41 @@ public class Task1 {
         boolean an = false;
         while (!an) {
             String city = sc.nextLine();
-            if (city.equals("Москва") || city.equals("Владивосток") || city.equals("Ростов") || city.equals("Москва ") || city.equals("Владивосток ") || city.equals("Ростов ") ) {
-                System.out.println(" - Россия");
+            switch (city) {
+                case "Москва":
+                case "Владивосток":
+                case "Ростов":
+                case "Москва ":
+                case "Владивосток ":
+                case "Ростов ":
+                    System.out.println(" - Россия");
 
-            }
-            else if (city.equals("Рим") || city.equals("Милан") || city.equals("Турин") || city.equals("Рим ") || city.equals("Милан ") || city.equals("Турин ")) {
-                System.out.println(" - Италия");
+                    break;
+                case "Рим":
+                case "Милан":
+                case "Турин":
+                case "Рим ":
+                case "Милан ":
+                case "Турин ":
+                    System.out.println(" - Италия");
 
-            }
-            else if (city.equals("Ливерпуль") || city.equals("Манчестер") || city.equals("Лондон") || city.equals("Ливерпуль ") || city.equals("Манчестер ") || city.equals("Лондон ")) {
-                System.out.println(" - Англия");
+                    break;
+                case "Ливерпуль":
+                case "Манчестер":
+                case "Лондон":
+                case "Ливерпуль ":
+                case "Манчестер ":
+                case "Лондон ":
+                    System.out.println(" - Англия");
 
-            }
-            else if (city.equals("Stop")) {
-                an = true;
-            }
-            else {
-                System.out.println(" - Неизвестная страна");
+                    break;
+                case "Stop":
+                    an = true;
+                    break;
+                default:
+                    System.out.println(" - Неизвестная страна");
 
+                    break;
             }
         }
 
