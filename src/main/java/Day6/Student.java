@@ -1,7 +1,7 @@
 package Day6;
 
 public class Student {
-    public static String name;
+    public String name;
 
     public Student(String name) {
         this.name = name;

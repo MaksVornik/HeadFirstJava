@@ -11,7 +11,7 @@ public class Teacher {
         this.subject = subject;
     }
     Random random = new Random();
-    public void evaluate () {
+    public void evaluate (Student student) {
         int rand = random.nextInt(4) + 2;
         String mark = null;
         if (rand == 2) {
@@ -25,7 +25,7 @@ public class Teacher {
         }
 
 
-        System.out.println("Преподаватель " + this.name + " оценил студента по имени : " + Student.name + " , по предмету : " + this.subject + " , на оценку : " + mark);
+        System.out.println("Преподаватель " + this.name + " оценил студента по имени : " + student.getName() + " , по предмету : " + this.subject + " , на оценку : " + mark);
     }
 
     public String getName() {
