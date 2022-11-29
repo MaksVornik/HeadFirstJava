@@ -5,7 +5,6 @@ import java.util.List;
 public class Check {
     private Client client1;
     private Order order;
-
     public Client getClient1() {
         return client1;
     }
@@ -13,10 +12,10 @@ public class Check {
     public Order getOrder() {
         return order;
     }
-    public static int getSum(List<Integer> order) {
+    public static int getSum(List<Dish> dish) {
         int sum = 0;
-        for (int check : order) {
-            sum = sum + check;
+        for (Dish dishes : dish) {
+            sum = sum + dishes.getPrice();
         }
         return sum;
     }

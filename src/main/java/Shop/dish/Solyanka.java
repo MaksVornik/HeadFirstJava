@@ -7,6 +7,6 @@ import java.util.List;
 
 public class Solyanka extends Dish {
     public Solyanka() {
-        super("Суп \"Салянка\"", 500, Arrays.asList("Супы"));
+        super("Суп \"Салянка\"", 500, Arrays.asList(13));
     }
 }

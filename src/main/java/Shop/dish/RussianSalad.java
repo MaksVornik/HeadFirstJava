@@ -7,6 +7,6 @@ import java.util.List;
 
 public class RussianSalad extends Dish {
     public RussianSalad() {
-        super("Салат \"Оливье\"", 280, Arrays.asList("Салаты"));
+        super("Салат \"Оливье\"", 280, Arrays.asList(12));
     }
 }

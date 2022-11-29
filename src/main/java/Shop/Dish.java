@@ -5,13 +5,13 @@ import java.util.List;
 public class Dish {
     private final String title;
     private final int price;
-    private final List<String> category;
+    private final List<Integer> id;
 
 
-    public Dish(String title, int price, List<String> category) {
+    public Dish(String title, int price, List<Integer> id) {
         this.title = title;
         this.price = price;
-        this.category = category;
+        this.id = id;
     }
 
     public String getTitle() {
@@ -22,16 +22,16 @@ public class Dish {
         return price;
     }
 
-    public List<String> getCategory() {
-        return category;
+    public List<Integer> getId() {
+        return id;
     }
 
     @Override
     public String toString() {
-        return "Dish{" +
-                "title='" + title + '\'' +
-                ", price=" + price +
-                ", ingredients=" + category +
+        return "{" +
+                 title + '\'' +
+                ", Цена=" + price +
+
                 '}' + "\n";
     }
 }

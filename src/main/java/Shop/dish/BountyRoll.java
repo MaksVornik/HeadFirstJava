@@ -7,6 +7,6 @@ import java.util.List;
 
 public class BountyRoll extends Dish {
     public BountyRoll() {
-        super("Рулет \"Баунти\" ",600, Arrays.asList("Дисерты"));
+        super("Рулет \"Баунти\" ",600, Arrays.asList(2));
     }
 }

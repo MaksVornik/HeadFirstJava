@@ -2,18 +2,15 @@ package Shop;
 
 import java.util.List;
 
-public class Client {
-    private int id;
+public class Client extends Person{
+
     private Order order;
 
-    public Client(int id, Order order) {
-        this.id = id;
+    public Client(int id, String name, int age, Order order) {
+        super(id, name, age);
         this.order = order;
     }
 
-    public int getId() {
-        return id;
-    }
 
     public Order getOrder() {
         return order;
