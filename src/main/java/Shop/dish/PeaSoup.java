@@ -7,6 +7,6 @@ import java.util.List;
 
 public class PeaSoup extends Dish {
     public PeaSoup() {
-        super("Суп \"Гороховый\"", 490, Arrays.asList(9));
+        super("Суп \"Гороховый\"", 490);
     }
 }

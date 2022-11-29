@@ -7,6 +7,6 @@ import java.util.List;
 
 public class RoyalSalad extends Dish {
     public RoyalSalad() {
-        super("Cалат \"Королевский\"", 300, Arrays.asList(11));
+        super("Cалат \"Королевский\"", 300);
     }
 }

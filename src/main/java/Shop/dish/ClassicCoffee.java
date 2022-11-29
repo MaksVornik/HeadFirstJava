@@ -9,6 +9,6 @@ public class ClassicCoffee extends Dish {
 
 
     public ClassicCoffee() {
-        super("Классический кофе", 40, Arrays.asList(6));
+        super("Классический кофе", 40);
     }
 }

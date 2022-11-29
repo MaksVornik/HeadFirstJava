@@ -1,22 +1,31 @@
 package Shop;
 
-import java.util.List;
-
 public class Check {
-    private Client client1;
-    private Order order;
-    public Client getClient1() {
-        return client1;
+    private  final Admin admin;
+    private final Order order;
+
+    public Check(Admin admin, Order order) {
+        this.admin = admin;
+        this.order = order;
     }
+
 
     public Order getOrder() {
         return order;
     }
-    public static int getSum(List<Dish> dish) {
+    public int getSum() {
         int sum = 0;
-        for (Dish dishes : dish) {
+        for (Dish dishes : this.order.getDishes1()) {
             sum = sum + dishes.getPrice();
         }
         return sum;
+    }
+
+    @Override
+    public String toString() {
+        return "Check{" +
+                "admin=" + admin +
+                ", order=" + order +
+                '}';
     }
 }

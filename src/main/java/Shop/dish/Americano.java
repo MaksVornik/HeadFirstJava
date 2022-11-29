@@ -7,6 +7,6 @@ import java.util.Arrays;
 public class Americano extends Dish {
 
     public Americano() {
-        super("Американо",50, Arrays.asList(1));
+        super("Американо",50);
     }
 }

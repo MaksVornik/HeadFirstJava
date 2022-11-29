@@ -7,6 +7,6 @@ import java.util.List;
 
 public class Cake extends Dish {
     public Cake() {
-        super("Торт \"Сметанный\"", 700, Arrays.asList(4));
+        super("Торт \"Сметанный\"", 700);
     }
 }

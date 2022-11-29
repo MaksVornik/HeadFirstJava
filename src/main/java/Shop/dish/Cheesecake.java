@@ -7,6 +7,6 @@ import java.util.List;
 
 public class Cheesecake extends Dish {
     public Cheesecake() {
-        super("Чизкейк",800, Arrays.asList(5));
+        super("Чизкейк",800);
     }
 }
